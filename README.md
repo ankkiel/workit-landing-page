@@ -11,6 +11,7 @@ This landing page is created with:
   + using 7-1 pattern
   + using Flexbox
 * BEM
+* animation library GSAP
 
 Deployment link is:
 
