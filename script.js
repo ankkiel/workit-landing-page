@@ -6,11 +6,11 @@ let btnAnimation = () => {
 }
 
 const tl = gsap.timeline({details: {duration: 1.5}});
-tl.fromTo('.intro__heading', {opacity: 0, ease: 'power1.out'}, {y: 0, opacity: 1, ease: 'power1.out'}) 
+tl.fromTo('.intro__heading', {opacity: 0, ease: 'power1.out'}, {y: 0, opacity: 1, ease: 'power1.out', duration: 2, stagger: 0.5}) 
   .add(btnAnimation());
 
 const tlImage = gsap.timeline({details: {duration: .1}, ease: 'power1.inOut'});
-tlImage.fromTo('.intro__image', {y: 100, opacity: 0}, {y: 0, opacity: 1});
+tlImage.fromTo('.intro__image', {y: 100, opacity: 0}, {y: 0, opacity: 1, duration: 1.5});
 
 
 const featuresItems = Array.from(document.querySelectorAll(".features__item"));
